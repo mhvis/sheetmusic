@@ -42,8 +42,14 @@ schleifer =
   title = "Harpsichord Concerto No.2 in E major"
   composer = "Johann Sebastian Bach"
   opus = "BWV 1053"
-  tagline = "Engraved by Maarten Visscher."
+  tagline = "Typeset using LilyPond by Maarten Visscher. Source: https://github.com/mhvis/sheetmusic."
   piece = "Movement I"
+  copyright = \markup {
+    \center-column {
+      "This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License."
+      "To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/."
+    }
+  }
 }
 
 \paper {
