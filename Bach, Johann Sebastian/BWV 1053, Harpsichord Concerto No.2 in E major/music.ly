@@ -42,12 +42,44 @@ schleifer =
   title = "Harpsichord Concerto No.2 in E major"
   composer = "Johann Sebastian Bach"
   opus = "BWV 1053"
-  tagline = "Typeset using LilyPond by Maarten Visscher. Source: https://github.com/mhvis/sheetmusic."
+  tagline = \markup {
+    \left-column {
+      \raise #4
+      \justify {
+        Transcribed from Bach-Gessellschaft Ausgabe, Band 17 (pp.43-78).
+        Leipzig: Breitkopf und Härtel, 1869. Plate B.W. XVII.
+      }
+      \line {
+        Music engraving by LilyPond
+        \concat {
+          $(lilypond-version)
+          \char ##x2014
+          \with-url #"http://www.lilypond.org"
+          "www.lilypond.org"
+          .
+        }
+        Source files:
+        \concat {
+          \with-url #"https://github.com/mhvis/sheetmusic"
+          github.com/mhvis/sheetmusic
+          .
+        }
+      }
+    }
+  }
   piece = "Movement I"
   copyright = \markup {
-    \center-column {
-      "This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License."
-      "To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/."
+    \with-url #"http://creativecommons.org/licenses/by-nc/4.0/"
+    %\rounded-box
+    \left-column {
+      \raise #1.5
+      \line {
+        \vcenter \epsfile #Y #4 #"by-nc.eu.eps"
+        \vcenter "Maarten Visscher, 2019"
+      }
+      \justify-string #"This work is licensed under the Creative Commons
+        Attribution-NonCommercial 4.0 International License. To view a copy of
+        this license, visit http://creativecommons.org/licenses/by-nc/4.0/."
     }
   }
 }
