@@ -49,7 +49,7 @@ schleifer =
         Transcribed from Bach-Gessellschaft Ausgabe, Band 17 (pp.43-78).
         Leipzig: Breitkopf und Härtel, 1869. Plate B.W. XVII.
       }
-      \line {
+      \justify {
         Music engraving by LilyPond
         \concat {
           $(lilypond-version)
@@ -58,12 +58,13 @@ schleifer =
           "www.lilypond.org"
           .
         }
-        Source files:
+        Source:
         \concat {
           \with-url #"https://github.com/mhvis/sheetmusic"
           github.com/mhvis/sheetmusic
           .
         }
+        Version: 2.
       }
     }
   }
